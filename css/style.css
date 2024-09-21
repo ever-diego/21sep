@@ -1,0 +1,47 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:linear-gradient( rgb(218, 109, 109),white );
+}
+.center
+{
+    margin: 50px 0 0 150px;
+}
+h1
+{
+    text-align: center;
+    font-size: 8em;
+    color: bisque;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    transform-origin: bottom;
+    transform: skewX(30deg);
+}
+
+section
+{
+
+    display: flex;
+    width: 80%%;
+    height: 50%%;
+    
+}
+section img
+{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover
+{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
